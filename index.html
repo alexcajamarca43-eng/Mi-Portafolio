@@ -128,6 +128,42 @@
   }
 }
 
+@media (max-width: 768px) {
+  /* Cards de métricas: de flex horizontal a flex vertical */
+  #metricas > div > div:nth-child(2) > div {
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 28px 20px !important;
+  }
+  /* Número de métrica más pequeño */
+  #metricas > div > div:nth-child(2) > div > div > div:first-child {
+    font-size: 2rem !important;
+  }
+  /* Texto del label más pequeño */
+  #metricas > div > div:nth-child(2) > div > div > div:nth-child(2) {
+    font-size: 0.9rem !important;
+  }
+  /* Banner CTA de métricas */
+  #metricas > div > div:last-child {
+    flex-direction: column !important;
+    gap: 20px !important;
+    padding: 28px 20px !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  #metricas > div > div:last-child > div {
+    text-align: center !important;
+  }
+  #metricas > div > div:last-child > div > div:first-child {
+    font-size: 1.1rem !important;
+  }
+  #metricas > div > div:last-child > a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
 /* --- CONTACTO --- */
 @media (max-width: 900px) {
   #contacto {
